@@ -1,15 +1,31 @@
-version: '3.8'
-
 services:
   app:
     build:
-      context: ""
+      context: .
       dockerfile: Dockerfile
     container_name: programwithgio-app
     restart: always
     working_dir: /var/www/
+    depends_on:
+      composer:
+        condition: service_completed_successfully
     volumes:
       - ../:/var/www
+
+  composer:
+    image: composer:2.0.9
+    container_name: programwithgio-composer
+    # Removed 'init: true' to fix the Tini/Zombie warning
+    volumes:
+      - ../:/var/www
+    user: "${UID:-1000}:${GID:-1000}"
+    working_dir: /var/www
+    environment:
+      - COMPOSER_PROCESS_TIMEOUT=600
+    restart: "no"
+    # This ONLY runs when you do 'docker compose up'
+    command: ["/bin/bash", "/var/www/scripts/composer/main-composer.sh"]
+
   nginx:
     image: nginx:1.19-alpine
     container_name: programwithgio-nginx
@@ -19,6 +35,7 @@ services:
     volumes:
       - ../:/var/www
       - ./nginx:/etc/nginx/conf.d
+
   db:
     container_name: programwithgio-db
     image: mysql:8.0
