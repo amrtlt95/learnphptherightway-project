@@ -27,7 +27,10 @@ class Container implements ContainerInterface
     public function get(string $id)
     {
         if ($this->has($id)) {
-            return $this->entries[$id];
+            if (is_callable($this->entries[$id])) {
+                return $this->entries[$id]();
+            }
+            $id = $this->entries[$id];
         }
         return $this->resolve($id);
     }
@@ -35,6 +38,11 @@ class Container implements ContainerInterface
     public function has(string $id): bool
     {
         return isset($this->entries[$id]);
+    }
+
+    public function set(string $id, callable|string $concrete)
+    {
+        $this->entries[$id] = $concrete;
     }
 
     public function resolve(string $id)
