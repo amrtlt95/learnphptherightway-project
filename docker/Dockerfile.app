@@ -16,4 +16,9 @@ RUN docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd
 
 # NO COMPOSER INSTALLED HERE
 
+#Xdebug
+RUN pecl install xdebug && docker-php-ext-enable xdebug
+
+COPY ./xdebug.ini "${PHP_INI_DIR}/conf.d"
+
 WORKDIR /var/www
