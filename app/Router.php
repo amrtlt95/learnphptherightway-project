@@ -28,7 +28,7 @@ class Router
                     $routeClass = $attribute->newInstance();
                     $routePath = $routeClass->routePath;
                     $requestMethod = $routeClass->requestMethod;
-                    $this->register($requestMethod, $routePath, [$controller,$method->name]);
+                    $this->register($requestMethod->value, $routePath, [$controller,$method->name]);
                 }
             }
         }
