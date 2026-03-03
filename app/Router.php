@@ -8,6 +8,7 @@ use App\Attributes\Route;
 use App\Exceptions\RouteNotFoundException;
 use ReflectionAttribute;
 use ReflectionClass;
+use Symfony\Component\Mailer\MailerInterface;
 
 class Router
 {

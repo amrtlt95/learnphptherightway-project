@@ -21,6 +21,7 @@ class Config
                 'database' => $env['DB_DATABASE'],
                 'driver'   => $env['DB_DRIVER'] ?? 'mysql',
             ],
+            "mailer_dsn" => $env['MAILER_DSN']
         ];
     }
 
