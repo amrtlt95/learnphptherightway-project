@@ -6,15 +6,30 @@ namespace App;
 
 use App\Exceptions\RouteNotFoundException;
 use Symfony\Component\Mailer\MailerInterface;
+use Dotenv\Dotenv;
+use App\CustomMailer;
 
 class App
 {
     private static DB $db;
+    private Config $config;
 
-    public function __construct(protected Container $container, protected Router $router, protected array $request, protected Config $config)
+    public function __construct(protected Container $container, protected ?Router $router = null, protected array $request = [])
     {
-        static::$db = new DB($config->db ?? []);
-        $this->container->set(MailerInterface::class, fn()=>new CustomMailer($config->mailer_dsn??[]) );
+    }
+
+
+    public function boot(): static
+    {
+         $dotenv = Dotenv::createImmutable(dirname(__DIR__));
+        $dotenv->load();
+        $this->config = new Config($_ENV);
+
+        static::$db = new DB($this->config->db ?? []);
+
+        $this->container->set(MailerInterface::class, fn()=>new CustomMailer($this->config->mailer_dsn??"") );
+
+        return $this;
     }
 
     public static function db(): DB
