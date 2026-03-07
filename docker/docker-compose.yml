@@ -58,3 +58,13 @@ services:
     ports:
       - 1025:1025
       - 8025:8025
+
+  cron:
+    container_name: programwithgio-cron
+    build:
+      context: crontab
+      dockerfile: Dockerfile.cron
+    volumes:
+        - ../:/var/www
+        - ./log/cron:/var/log/cron
+    restart: always
