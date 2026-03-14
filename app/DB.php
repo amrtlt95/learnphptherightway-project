@@ -22,9 +22,9 @@ class DB
 
         try {
             $this->pdo = new PDO(
-                $config['driver'] . ':host=' . $config['host'] . ';dbname=' . $config['database'],
+                /*$config['driver'] ?? */"mysql" . ':host=' . $config['host'] . ';dbname=' . $config['dbname'],
                 $config['user'],
-                $config['pass'],
+                $config['password'],
                 $config['options'] ?? $defaultOptions
             );
         } catch (\PDOException $e) {

@@ -66,7 +66,9 @@ class EmailModel extends Model
     private function updateEmailStatusToSent(int $id): void
     {
         $query = "UPDATE emails
-                    SET status = :status
+                    SET
+                    status = :status,
+                    sent_at =  NOW()
                     WHERE id = :id";
 
         $stmt = $this->db->prepare($query);

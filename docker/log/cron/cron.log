@@ -1,2 +1,398 @@
 Could not open input file: /var/www/scripts/php/Email.php
 HelloHello
+Fatal error: Uncaught PDOException: SQLSTATE[HY000] [2002] Connection refused in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Fatal error: Uncaught PDOException: SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for db failed: Name does not resolve in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Parse error: syntax error, unexpected single-quoted string "user", expecting "]" in /var/www/app/Config.php on line 27
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Warning: Undefined array key "database" in /var/www/app/DB.php on line 25
+
+Warning: Undefined array key "pass" in /var/www/app/DB.php on line 27
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
+
+Fatal error: Uncaught PDOException: could not find driver in /var/www/app/DB.php:31
+Stack trace:
+#0 /var/www/app/App.php(28): App\DB->__construct(Array)
+#1 /var/www/scripts/php/email.php(24): App\App->boot()
+#2 {main}
+  thrown in /var/www/app/DB.php on line 31
