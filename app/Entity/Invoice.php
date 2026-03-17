@@ -40,6 +40,9 @@ class Invoice
     #[Column(name:"created_at")]
     private \DateTime $createdAt;
 
+    #[Column(name:"due_date")]
+    private \DateTime $dueDate;
+
     #[OneToMany(targetEntity:InvoiceItem::class, mappedBy:"invoice", cascade:['persist',"remove"])]
     private Collection $invoiceItems;
 
@@ -120,6 +123,26 @@ class Invoice
     {
         $invoiceItem->setInvoice($this);
         $this->invoiceItems->add($invoiceItem);
+
+        return $this;
+    }
+
+    /**
+     * Get the value of dueDate
+     */ 
+    public function getDueDate()
+    {
+        return $this->dueDate;
+    }
+
+    /**
+     * Set the value of dueDate
+     *
+     * @return  self
+     */ 
+    public function setDueDate($dueDate)
+    {
+        $this->dueDate = $dueDate;
 
         return $this;
     }

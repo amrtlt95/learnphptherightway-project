@@ -83,34 +83,34 @@ $conn = DriverManager::getConnection($connectionParams);
 
     $entityManager = new EntityManager($conn, ORMSetup::createAttributeMetadataConfiguration([__DIR__ . "/../app/Entities"], true));
 
-$invoiceItems = [
-    ["item 1", 1, 5],
-    ["item 2", 2, 3],
-    ["item 3", 3, 7]
-];
+// $invoiceItems = [
+//     ["item 1", 1, 5],
+//     ["item 2", 2, 3],
+//     ["item 3", 3, 7]
+// ];
 
-$invoice = (new Invoice())
-            ->setAmount(15)
-            ->setInvoiceNumber("invoice 1")
-            ->setStatus(InvoiceStatus::paid);
+// $invoice = (new Invoice())
+//             ->setAmount(15)
+//             ->setInvoiceNumber("invoice 1")
+//             ->setStatus(InvoiceStatus::paid);
 
-foreach($invoiceItems as [$description, $quanity, $unitPrice])
-    {
-        $invoiceItem = (new InvoiceItem())
-                        ->setDescription($description)
-                        ->setQuantity($quanity)
-                        ->setUnitPrice($unitPrice);
-        $invoice->addItem($invoiceItem);
+// foreach($invoiceItems as [$description, $quanity, $unitPrice])
+//     {
+//         $invoiceItem = (new InvoiceItem())
+//                         ->setDescription($description)
+//                         ->setQuantity($quanity)
+//                         ->setUnitPrice($unitPrice);
+//         $invoice->addItem($invoiceItem);
         
-    }
+//     }
 
-    $path = __DIR__ . "/../app/Entities";
-
-
-    $entityManager->persist($invoice);
+//     $path = __DIR__ . "/../app/Entities";
 
 
-    $entityManager->flush();
+//     $entityManager->persist($invoice);
+
+
+//     $entityManager->flush();
 
 // $entityManager->remove($invoice);
 // $entityManager->flush();
@@ -162,3 +162,5 @@ foreach($invoiceItems as [$description, $quanity, $unitPrice])
 //                         ->getQuery();
 
 // var_dump($query->getArrayResult());
+
+print_r( \Doctrine\DBAL\Types\Type::getTypesMap());
