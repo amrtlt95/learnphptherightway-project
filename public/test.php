@@ -84,14 +84,13 @@ $conn = DriverManager::getConnection($connectionParams);
     $entityManager = new EntityManager($conn, ORMSetup::createAttributeMetadataConfiguration([__DIR__ . "/../app/Entities"], true));
 
 $invoiceItems = [
-    ["item 1", 1, 10],
-    ["item 2", 2, 30],
-    ["item 1", 3, 70]
+    ["item 1", 1, 5],
+    ["item 2", 2, 3],
+    ["item 3", 3, 7]
 ];
 
 $invoice = (new Invoice())
-            ->setAmount(280)
-            ->setCreatedAt(new \DateTime())
+            ->setAmount(15)
             ->setInvoiceNumber("invoice 1")
             ->setStatus(InvoiceStatus::paid);
 
@@ -113,8 +112,8 @@ foreach($invoiceItems as [$description, $quanity, $unitPrice])
 
     $entityManager->flush();
 
-$entityManager->remove($invoice);
-$entityManager->flush();
+// $entityManager->remove($invoice);
+// $entityManager->flush();
 
 
 //     $invoice = ($entityManager->find(Invoice::class,9));
@@ -124,6 +123,42 @@ $entityManager->flush();
 // $entityManager->flush();
 
 
-    
 
 
+// $queryBuilder=$entityManager->createQueryBuilder();
+
+// $query = $queryBuilder->select("i",/*"it"*/)
+//                         ->from(Invoice::class,"i")
+//                         // ->join("i.invoiceItems","it")
+//                         ->getQuery();
+
+
+
+// // echo $query->getDQL();
+// var_dump( $query->getArrayResult());
+
+
+// var_dump( $result);
+
+
+//                    WHERE amount > :amount AND (status = :status OR created_at >= :date)
+//WHERE invoice.amount > amount AND (invoice.status = :status OR invoice.createdAt >= :createdAt)
+
+// $queryBuilder = $entityManager->createQueryBuilder();
+
+// $query = $queryBuilder->select("invoice")
+//                         ->from(Invoice::class,"invoice")
+//                         ->where(
+//                             $queryBuilder->expr()->andX(
+//                                 $queryBuilder->expr()->gt("invoice.amount",":amount"),
+//                                 $queryBuilder->expr()->orX(
+//                                     $queryBuilder->expr()->eq("invoice.status",":status"),
+//                                     $queryBuilder->expr()->gte("invoice.createdAt",":createdAt")
+//                                 )
+//                             )
+//                         )->setParameter(":amount",15)
+//                         ->setParameter(":status",InvoiceStatus::paid)
+//                         ->setParameter(":createdAt","2026-03-17 17:37:28")
+//                         ->getQuery();
+
+// var_dump($query->getArrayResult());
